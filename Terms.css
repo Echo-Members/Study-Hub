@@ -15,26 +15,39 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
-  nav ul {
+nav {
+    background-color: #007acc; /* professional bright blue */
+    padding: 0.75rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+nav ul {
     list-style: none;
     padding: 0;
-    margin: 1rem 0 0 0;
+    margin: 0;
     display: flex;
     justify-content: center;
     gap: 2rem;
-  }
+}
 
-  nav a {
+nav a {
     color: #003366;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 1rem;
+    font-weight: bold;
     transition: color 0.3s ease;
-  }
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
 
-  nav a:hover {
-    color: #00aaff;
-  }
+nav a:hover {
+    background-color: #00c8ff;
+    color: white;
+}
+
 
   .back-home {
     position: absolute;
@@ -71,6 +84,7 @@
   h2 {
     color: #005fa3;
     margin-top: 2rem;
+    text-align: center;
   }
 
   section p {
