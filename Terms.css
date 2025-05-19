@@ -1,30 +1,24 @@
-
-  body {
+body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #f2f9ff;
     color: #222;
     margin: 0;
     padding: 0;
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f2f9ff;
-    color: #222;
-    margin: 0;
-    padding: 0;
-  }
+}
 
-  header {
+header {
     background: #003366;
     color: #ffffff;
     padding: 1.5rem 1rem;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+}
 
 nav {
-    background-color: #007acc; /* professional bright blue */
+    background-color: #007acc;
+    /* professional bright blue */
     padding: 0.75rem 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -55,7 +49,7 @@ nav a:hover {
 }
 
 
-  .back-home {
+.back-home {
     position: absolute;
     left: 1rem;
     top: 1rem;
@@ -66,142 +60,61 @@ nav a:hover {
     text-decoration: none;
     font-weight: 600;
     transition: background 0.3s ease, color 0.3s ease;
-  }
+}
 
-  .back-home:hover {
+.back-home:hover {
     background: #00aaff;
     color: #003366;
-  }
+}
 
-  main {
+main {
     max-width: 900px;
     margin: 2rem auto;
     padding: 2rem;
     background: #ffffff;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 51, 102, 0.08);
-  }
+}
 
-  h1 {
+h1 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
-  }
+}
 
-  h2 {
+h2 {
     color: #005fa3;
     margin-top: 2rem;
     text-align: center;
-  }
+}
 
-  section p {
+section p {
     line-height: 1.6;
     margin-top: 0.5rem;
-  }
+}
 
-  footer {
+footer {
     background: #003366;
     color: white;
     text-align: center;
     padding: 1rem 0;
     font-size: 0.9rem;
     margin-top: 3rem;
-  }
-
-  nav ul li.active {
-    display: none;
-}
-  }
-
-  header {
-    background: #003366;
-    color: #ffffff;
-    padding: 1.5rem 1rem;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-
-nav {
-    background-color: #007acc; /* professional bright blue */
-    padding: 0.75rem 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
 
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-nav a {
-    color: #003366;
-    text-decoration: none;
+footer span {
+    color: #00bfff;
     font-weight: bold;
-    transition: color 0.3s ease;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
 }
 
-nav a:hover {
-    background-color: #00c8ff;
-    color: white;
+@media (max-width: 600px) {
+    .container {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
 }
-
-
-  .back-home {
-    position: absolute;
-    left: 1rem;
-    top: 1rem;
-    color: white;
-    background: #005fa3;
-    padding: 0.5rem 1.2rem;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background 0.3s ease, color 0.3s ease;
-  }
-
-  .back-home:hover {
-    background: #00aaff;
-    color: #003366;
-  }
-
-  main {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 51, 102, 0.08);
-  }
-
-  h1 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-  }
-
-  h2 {
-    color: #005fa3;
-    margin-top: 2rem;
-    text-align: center;
-  }
-
-  section p {
-    line-height: 1.6;
-    margin-top: 0.5rem;
-  }
-
-  footer {
-    background: #003366;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    font-size: 0.9rem;
-    margin-top: 3rem;
-  }
