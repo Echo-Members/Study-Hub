@@ -6,6 +6,70 @@ body {
     color: #222;
 }
 
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(0, 51, 102, 0.7);
+    /* Transparent */
+    backdrop-filter: blur(8px);
+    /* Frosted glass effect */
+    color: white;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+    z-index: 1001;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.sidebar ul li:hover {
+    background-color: rgba(0, 95, 163, 0.7);
+}
+
+.sidebar ul li i {
+    margin-right: 10px;
+}
+
+.submenu {
+    display: none;
+    padding-left: 30px;
+    background: rgba(0, 38, 77, 0.6);
+    backdrop-filter: blur(6px);
+}
+
+.sidebar ul li.open .submenu {
+    display: block;
+}
+
+/* Hamburger Icon */
+.menu-toggle {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    z-index: 1002;
+}
+
 header {
     background: linear-gradient(to right, #002b5c, #004a99);
     /* royal blue gradient */
@@ -15,26 +79,6 @@ header {
     font-family: 'Times New Roman', serif;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
-
-.back-home {
-    position: absolute;
-    left: 1.5rem;
-    top: 1.5rem;
-    color: #ffffff;
-    background: #005fa3;
-    padding: 0.5rem 1.2rem;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 0.95rem;
-    transition: background 0.3s ease, color 0.3s ease;
-}
-
-.back-home:hover {
-    background: #00c8ff;
-    color: #003366;
-}
-
 
 nav {
     background-color: #007acc;

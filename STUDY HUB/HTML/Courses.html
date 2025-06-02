@@ -7,25 +7,38 @@
     <title>Courses | Echo's Tech Education</title>
     <link rel="stylesheet" href="Courses.css">
     <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 
 <body>
-
-
+    <!-- Sidebar and Toggle -->
+    <div class="menu-toggle" onclick="toggleSidebar()">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li onclick="location.href='Home.html'"><i class="fa-solid fa-house"></i> Home</li>
+            <li onclick="toggleSubMenu(this)">
+                <i class="fas fa-book"></i> Courses
+                <ul class="submenu">
+                    <li onclick="location.href='#btech'">B.Tech</li>
+                    <li onclick="location.href='#it'">IT & Technology</li>
+                    <li onclick="location.href='#diploma'">Diploma in CS</li>
+                    <li onclick="location.href='#bca'">BCA</li>
+                    <li onclick="location.href='#bscit'">BSc IT</li>
+                    <li onclick="location.href='#management'">Management</li>
+                </ul>
+            </li>
+            <li onclick="location.href='About.html'"><i class="fa-solid fa-circle-info"></i> About</li>
+            <li onclick="location.href='Terms.html'"><i class="fas fa-gavel"></i> Terms</li>
+            <li onclick="location.href='contact.html'"><i class="fa-solid fa-envelope"></i> Contact</li>
+        </ul>
+    </div>
     <header>
-        <a href="Home.html" class="back-home">← Back to Home</a>
         <h1>Courses</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Terms.html">Terms</a></li>
-            <li class="active"><a href="Courses.html">Courses</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    </header>
+
     <section>
         <h2 style="text-align:center; margin-top:2.5rem;">Programming Languages</h2>
         <div class="video-grid">
@@ -39,7 +52,8 @@
                 <img src="Learn Java Course.jpg" alt="Java Fundamentals">
                 <h3>Java Fundamentals</h3>
                 <p>Understand the basics of Java programming and object-oriented concepts.</p>
-                <a href="https://www.youtube.com/watch?v=yRpLlJmRo2w&list=PLfqMhTWNBTe3LtFWcvwpqTkUSlB32kJop">Watch Video</a>
+                <a href="https://www.youtube.com/watch?v=yRpLlJmRo2w&list=PLfqMhTWNBTe3LtFWcvwpqTkUSlB32kJop">Watch
+                    Video</a>
             </div>
             <div class="video-card">
                 <img src="c++essenstials.jpg" alt="C++ Essentials">
@@ -100,7 +114,7 @@
     <footer>
         <p>&copy; 2025 <span>Echo Tech Education</span>. All rights reserved.</p>
     </footer>
-
+    <script src="Courses.js"></script>
 </body>
 
 </html>
